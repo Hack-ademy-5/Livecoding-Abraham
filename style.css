@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    familia de fuentes: 'Orbitron', sans-serif;
+}
+
+/* Root coge el elemento raíz etiqueta madre y lo que se ponga dentro lo va a aplicar a todo el html. Las pseudo-clases son más específicas que las etiquetas en las cascadas. */
+/* Una variable es como una caja, porque le das un nombre y le metes dentro un contenido. */    /* variable = box             nombre = contenido */
+:root{
+    --main-color: #0077B6;
+    --accent-color: #48cae4;
+}
+
+.text-main{
+    color: var(--main-color);
+}
+.text-accent{
+    color: var(--accent-color);
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.gb-accent{
+    background-color: var(--accent-color);
+}
+
+.borderNav{
+    
+    border-bottom: 2px solid var(--accent-color);
+    
+}
+h1, h2, h3, h4, .h1, .h2, .h3, .h4{
+    
+    color: white;
+}
+
+.cabeza{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(black 10%, transparent, black 90%), url(./imágenes/nasa-CpHNKNRwXps-unsplash.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.buttom{
+    height: 30px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 25%;
+    color: white;
+    border: ridge;    
+}
+.imagenfondo{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(black 10%, transparent, black 90%), url('./imágenes/nasa-rTZW4f02zY8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
